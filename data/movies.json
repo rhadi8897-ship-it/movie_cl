@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "hadi",
+    "genre": "wa",
+    "year": 2027,
+    "director": "ca,ca",
+    "actors": [
+      "ca",
+      "ca"
+    ],
+    "rating": 4.4
+  },
+  {
+    "id": 2,
+    "name": "hadi",
+    "genre": "horror",
+    "year": 2027,
+    "director": "da,da",
+    "actors": [
+      "ss",
+      "ss"
+    ],
+    "rating": 3.3
+  }
+]
