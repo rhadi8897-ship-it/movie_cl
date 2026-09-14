@@ -45,9 +45,7 @@ class MovieService {
 
     int oldLength = movies.length;
 
-    movies.removeWhere(
-      (movie) => movie['id'] == id,
-    );
+    movies.removeWhere((movie) => movie['id'] == id);
 
     if (movies.length == oldLength) {
       print('Movie not found!');
@@ -63,12 +61,10 @@ class MovieService {
   List<Movie> getMovies() {
     List<dynamic> movies = fileManager.readMovies();
 
-    return movies
-        .map((movie) => Movie.fromJson(movie))
-        .toList();
+    return movies.map((movie) => Movie.fromJson(movie)).toList();
   }
 
-  // Export movies 
+  // Export movies
   Future<void> exportCsv() async {
     List<Movie> movies = getMovies();
 
@@ -84,24 +80,18 @@ class MovieService {
       return;
     }
 
-    final downloadsFolder = Directory(
-      '$userProfile\\Downloads',
-    );
+    final downloadsFolder = Directory('$userProfile\\Downloads');
 
     if (!downloadsFolder.existsSync()) {
       downloadsFolder.createSync(recursive: true);
     }
 
-    final file = File(
-      '${downloadsFolder.path}\\movies.csv',
-    );
+    final file = File('${downloadsFolder.path}\\movies.csv');
 
     final sink = file.openWrite();
 
     // CSV header
-    sink.writeln(
-      'id,name,genre,year,director,actors,rating',
-    );
+    sink.writeln('id,name,genre,year,director,actors,rating');
 
     // Movie data
     for (final movie in movies) {

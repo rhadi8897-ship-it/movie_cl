@@ -1,26 +1,50 @@
 [
   {
     "id": 1,
-    "name": "hadi",
-    "genre": "wa",
-    "year": 2027,
-    "director": "ca,ca",
+    "name": "it",
+    "genre": "horror",
+    "year": 2018,
+    "director": "Andy Muschietti,",
     "actors": [
-      "ca",
-      "ca"
+      "andy",
+      "makartine"
     ],
-    "rating": 4.4
+    "rating": 7.3
   },
   {
     "id": 2,
-    "name": "hadi",
+    "name": "hdua",
     "genre": "horror",
-    "year": 2027,
-    "director": "da,da",
+    "year": 2017,
+    "director": "vvb,fff",
     "actors": [
-      "ss",
-      "ss"
+      "ada",
+      "dad"
     ],
-    "rating": 3.3
+    "rating": 3.7
+  },
+  {
+    "id": 3,
+    "name": "bord",
+    "genre": "smile",
+    "year": 2016,
+    "director": "ttt,tttt",
+    "actors": [
+      "ssd",
+      "dsd"
+    ],
+    "rating": 2.2
+  },
+  {
+    "id": 4,
+    "name": "hadi",
+    "genre": "rera",
+    "year": 2018,
+    "director": "",
+    "actors": [
+      "fr",
+      "fr"
+    ],
+    "rating": 4.4
   }
 ]
